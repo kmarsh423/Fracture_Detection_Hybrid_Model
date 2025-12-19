@@ -13,6 +13,9 @@ from pathlib import Path
 
 current_dir = Path.cwd()
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_ROOT = PROJECT_ROOT / "data"
+
 class EarlyStopping:
     def __init__(self, patience=2, min_delta=0.0):
         self.patience = patience
@@ -99,8 +102,8 @@ def main():
                        names=['path'])
   
   # Create datasets
-  train_dataset = MURADataset(df=train_df, data_root='c:/Users/marzk/Documents/Coding/AI/imageClassification/data')
-  val_dataset = MURADataset(df=valid_df, data_root='c:/Users/marzk/Documents/Coding/AI/imageClassification/data')
+  train_dataset = MURADataset(df=train_df, data_root=DATA_ROOT)
+  val_dataset = MURADataset(df=valid_df, data_root=DATA_ROOT)
 
   # Compute class imbalance
   pos_weight = (
@@ -168,4 +171,5 @@ def main():
   print('Training Complete.')
 
 if __name__ == '__main__':
+
   main()
