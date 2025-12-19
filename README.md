@@ -97,6 +97,19 @@ Reported metrics include:
 
 Hyperparameter EDA is used to analyze **risk–coverage tradeoffs** and select a recall-leaning operating point with meaningful abstention.
 
+---
+
+## Project Structure
+
+src/
+├── dataset.py        # MURA dataset handling
+├── model.py          # CNN backbone
+├── train.py          # Training with early stopping
+├── evaluate.py       # Grad-CAM Classifier + hybrid evaluation
+notebooks/
+├── eda.ipynb
+├── hybrid_hyperparameter_eda.ipynb
+├── GradCAM_visualization.ipynb
 
 
 
