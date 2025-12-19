@@ -100,7 +100,7 @@ Hyperparameter EDA is used to analyze **risk–coverage tradeoffs** and select a
 ---
 
 ## Project Structure
-
+```text
 src/
 ├── dataset.py        # MURA dataset handling
 ├── model.py          # CNN backbone
@@ -110,6 +110,7 @@ notebooks/
 ├── eda.ipynb
 ├── hybrid_hyperparameter_eda.ipynb
 ├── GradCAM_visualization.ipynb
+```
 
 
 
