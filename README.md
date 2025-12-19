@@ -112,6 +112,27 @@ notebooks/
 ├── GradCAM_visualization.ipynb
 ```
 
+---
+
+
+---
+
+## Key Takeaways
+
+- High recall alone is insufficient for medical imaging
+- Localization confidence should influence decisions, not just explanations
+- Explicit abstention leads to safer, more interpretable systems
+- Hybrid ML + rule-based logic bridges black-box models and clinical reasoning
+
+---
+
+## Future Work
+
+- Study-level aggregation (multi-view exams)
+- Segmentation-aware localization
+- Calibration of uncertainty estimates
+- External dataset validation
+
 
 
 
