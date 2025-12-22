@@ -1,8 +1,8 @@
 # Fracture Detection with Hybrid CNN + Grad-CAM Triage
 
 ## Overview
-This project implements a **hybrid medical imaging system for fracture detection using X-ray scans from the Standord MURA dataset.**.
-The systen is designed as a **high-recall screening tool** that combines:
+This project implements a **hybrid medical imaging system for fracture detection using X-ray scans from the Stanford MURA dataset.**.
+The system is designed as a **high-recall screening tool** that combines:
  - A **CNN classifier** to detect the presence of fractures
  - A **Grad-CAM-based localization confidence module** to decide whether th emodel can confidently identify <i>where</i> a fracture is located
 
@@ -115,8 +115,6 @@ notebooks/
 ---
 
 
----
-
 ## Key Takeaways
 
 - High recall alone is insufficient for medical imaging
@@ -132,6 +130,7 @@ notebooks/
 - Segmentation-aware localization
 - Calibration of uncertainty estimates
 - External dataset validation
+
 
 
 
